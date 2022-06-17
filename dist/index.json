@@ -1,0 +1,132 @@
+{
+  "8": {
+    "item": 8,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [7], "arrays": ["two"] }
+  },
+  "12": {
+    "item": 12,
+    "appearances": 2,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [0],
+      "index_of_two": [11],
+      "arrays": ["one", "two"]
+    }
+  },
+  "16": {
+    "item": 16,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [0], "arrays": ["two"] }
+  },
+  "64": {
+    "item": 64,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [9], "index_of_two": [], "arrays": ["one"] }
+  },
+  "69": {
+    "item": 69,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [8], "index_of_two": [], "arrays": ["one"] }
+  },
+  "72": {
+    "item": 72,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [6], "index_of_two": [], "arrays": ["one"] }
+  },
+  "73": {
+    "item": 73,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [3], "arrays": ["two"] }
+  },
+  "74": {
+    "item": 74,
+    "appearances": 3,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [1],
+      "index_of_two": [1, 6],
+      "arrays": ["one", "two"]
+    }
+  },
+  "75": {
+    "item": 75,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [7], "index_of_two": [], "arrays": ["one"] }
+  },
+  "82": {
+    "item": 82,
+    "appearances": 2,
+    "arrays_present": ["one"],
+    "indexes": {
+      "index_of_one": [2, 11],
+      "index_of_two": [],
+      "arrays": ["one"]
+    }
+  },
+  "171": {
+    "item": 171,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [9], "arrays": ["two"] }
+  },
+  "545": {
+    "item": 545,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [4], "arrays": ["two"] }
+  },
+  "674": {
+    "item": 674,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [4], "index_of_two": [], "arrays": ["one"] }
+  },
+  "721": {
+    "item": 721,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [5], "arrays": ["two"] }
+  },
+  "723": {
+    "item": 723,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [3], "index_of_two": [], "arrays": ["one"] }
+  },
+  "782": {
+    "item": 782,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [5], "index_of_two": [], "arrays": ["one"] }
+  },
+  "928": {
+    "item": 928,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [2], "arrays": ["two"] }
+  },
+  "999": {
+    "item": 999,
+    "appearances": 2,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [10],
+      "index_of_two": [10],
+      "arrays": ["one", "two"]
+    }
+  },
+  "6721": {
+    "item": 6721,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [8], "arrays": ["two"] }
+  }
+}

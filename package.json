@@ -1,0 +1,19 @@
+{
+  "name": "writedata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./utils/writeData.js",
+    "writeFile": "node ./writeJSON.js",
+    "script": "node ./javascript/dom.js",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
