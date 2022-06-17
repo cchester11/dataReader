@@ -1,13 +1,16 @@
-const data = require('../../data/index.json')
 const data_here = document.getElementById('data_here')
 
-const printNumbers = () => {
-      Object.keys(data).forEach(( key ) => {
-            let newItem = document.createElement('li')
-            newItem.textContent = data[key].item
-
-            data_here.appendChild(newItem)
+const printNumbers = async () => {
+      const data = await fetch("http://localhost:3001/data")
+      data.json().then(res => {
+            Object.keys(res).forEach(( key ) => {
+                  let newItem = document.createElement('li')
+                  newItem.textContent = res[key].item
+      
+                  data_here.appendChild(newItem)
+            })
       })
+      
 }
 
 printNumbers()
