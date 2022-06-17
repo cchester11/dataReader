@@ -1,4 +1,4 @@
-const data = require('../../dist/index.json')
+const data = require('../../data/index.json')
 const data_here = document.getElementById('data_here')
 
 const printNumbers = () => {

@@ -63,7 +63,7 @@ const mapPattern = (one, two) => {
             }
       }
 
-      fs.writeFile('./dist/index.json', JSON.stringify(map), err => {
+      fs.writeFile('./data/index.json', JSON.stringify(map), err => {
             if(err) {
                   throw new Error(err)
             }
