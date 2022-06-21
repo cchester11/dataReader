@@ -17,9 +17,7 @@ searchBtn.addEventListener('click', async () => {
             for(let i = 0; i < database.length; i ++) {
                   let curr = database[i][0]
                   
-                  if(curr = text) {
-                        return Object.entries(res[curr])
-                  }
+                  // not sure what to do here
             }
       })
 })
