@@ -18,6 +18,7 @@ searchBtn.addEventListener('click', async () => {
                   let curr = database[i][0]
                   
                   // not sure what to do here
+                  // want to start by just returning the all the information of searched for number
             }
       })
 })
