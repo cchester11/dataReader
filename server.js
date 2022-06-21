@@ -8,9 +8,10 @@ const PORT = 3001
 console.log(data);
 
 app.use(express.static(path.join(__dirname, 'public')))
-// app.get('/', (req, res) => {
-//       res.sendFile(path.join(__dirname, './index.html'))
-// })
+
+app.get('/data', (req, res) => {
+      res.json(data)
+})
 
 app.listen(PORT, (err) => {
       if(err) {
@@ -18,8 +19,4 @@ app.listen(PORT, (err) => {
       } else {
             console.log('Listening on PORT ' + PORT)
       }
-})
-
-app.get('/data', (req, res) => {
-      res.json(data)
 })
