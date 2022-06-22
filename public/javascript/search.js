@@ -4,7 +4,8 @@
 // reference search value with database in fetch request
 // send back data if match in container
 const searchBtn= document.querySelector('#searchBtn')
-let searchBar = document.getElementById('searchBar')
+const searchBar = document.getElementById('searchBar')
+const searchResults = document.getElementById('searchResults')
 
 searchBtn.addEventListener('click', async () => {
       let text = searchBar.value
@@ -14,18 +15,18 @@ searchBtn.addEventListener('click', async () => {
       .then(res => {
             const database = Object.entries(res) 
 
-            for(let i = 0; i < database.length; i ++) {
-                  let curr = database[i][0]
-                  
-                  // not sure what to do here
-                  // want to start by just returning the all the information of searched for number
+            const findSearchRequest = function () {
+                  for(let i = 0; i < database.length; i ++) {
+                        if(database[i][0] === text) {
+                              const results = document.createElement('div')
+                              results.textContent = database[i].entries()
+                              searchResults.appendChild(results)
+                              console.log(database[i].entries())
+                        }
+                  }
             }
+
+            findSearchRequest()
       })
 })
-
-// function findSearchRequest (key, text) {
-//       if(key = text) {
-//             return key
-//       }
-// } 
 
