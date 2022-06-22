@@ -5,8 +5,6 @@ const data = require('./data/index.json')
 
 const PORT = 3001
 
-console.log(data);
-
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/data', (req, res) => {

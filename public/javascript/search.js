@@ -18,12 +18,16 @@ searchBtn.addEventListener('click', async () => {
             const findSearchRequest = function () {
                   for(let i = 0; i < database.length; i ++) {
                         if(database[i][0] === text) {
-                              const results = document.createElement('div')
-                              results.textContent = database[i].entries()
-                              searchResults.appendChild(results)
-                              console.log(database[i].entries())
+                              const results = JSON.stringify(database[i])
+                              searchResults.textContent = results
+
+                              searchBar.value = ''
+                              
+                              return
                         }
                   }
+
+                  window.alert("We could not find the number you've searched for in our database")
             }
 
             findSearchRequest()
