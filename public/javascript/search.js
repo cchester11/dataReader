@@ -1,8 +1,3 @@
-// import data
-// connect to search element
-// grab value from search element
-// reference search value with database in fetch request
-// send back data if match in container
 const searchBtn= document.querySelector('#searchBtn')
 const searchBar = document.getElementById('searchBar')
 const searchResults = document.getElementById('searchResults')
@@ -22,7 +17,7 @@ searchBtn.addEventListener('click', async () => {
                               searchResults.textContent = results
 
                               searchBar.value = ''
-                              
+
                               return
                         }
                   }
