@@ -23,6 +23,7 @@ searchBtn.addEventListener('click', async () => {
                   }
 
                   window.alert("We could not find the number you've searched for in our database")
+                  searchBar.value = ''
             }
 
             findSearchRequest()
