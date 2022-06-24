@@ -1,13 +1,27 @@
 .searchResults {
   /* higher the z-index the closer to the top of the stack */
   z-index: 9000;
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   background-color: whitesmoke;
-  border-radius: 10px;
+  border-radius: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: large;
 }
+
+.hideResultsBtn {
+      border-color: black;
+      right: 5%;
+      top: 5%;
+      position: fixed;
+}
+
+
