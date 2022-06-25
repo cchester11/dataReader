@@ -10,10 +10,14 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/index.css" />
     <title>Document</title>
   </head>
   <body class="bg-dark">
+    <input class="nav-item searchInput" id="searchBar" type="text" placeholder="Search.." />
+    <button class="btn btn-primary searchBtn" id="searchBtn" type="submit">
+      Submit
+    </button>
     <div>
       <div id="searchResults" class="searchResults">
         <button type="button" class="hideResultsBtn" id="hideResultsBtn">X</button>
@@ -30,20 +34,8 @@
       </div>
     </div>
     <div class="text-light">
-      <div class="nav nav-tabs sticky-top">
-        <input
-          class="nav-item"
-          id="searchBar"
-          type="text"
-          placeholder="Search.."
-        />
-        <button class="btn btn-primary" id="searchBtn" type="submit">
-          Submit
-        </button>
-      </div>
       <section>
-        <h1>Numbers</h1>
-        <div id="data_here"></div>
+        <div id="data_here" class="data_container"></div>
       </section>
     </div>
 
