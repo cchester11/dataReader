@@ -22,10 +22,10 @@ const printNumbers = async () => {
 
                   masterForItem.setAttribute('class', 'card')
                   itemNumber.setAttribute('class', 'card-header')
-                  itemNumber.setAttribute('class', 'bg-primary')
+                  // itemNumber.setAttribute('class', 'bg-primary')
                   bodyOfItem.setAttribute('class', 'list-group list-group-flush')
                   bodyText.setAttribute('class', 'list-group-item')
-                  masterForItem.setAttribute('class', 'bg-info')
+                  // masterForItem.setAttribute('class', 'bg-info')
 
                   data_here.appendChild(masterForItem)
                   masterForItem.appendChild(bodyOfItem)
