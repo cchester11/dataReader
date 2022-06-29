@@ -18,6 +18,13 @@ h3, .list-group-item {
   transform: translate(-50%, -50%);
 }
 
+.takeMeHomeBtn {
+  z-index: 9000;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+}
+
 .searchResults {
   /* higher the z-index the closer to the top of the stack */
   z-index: 9000;
