@@ -3,6 +3,11 @@ html, body {
   height: 100%;
 }
 
+h3, .list-group-item {
+  background-color: mediumpurple;
+  color: white;
+}
+
 .searchDiv {
   z-index: 9000;
   position: fixed;
