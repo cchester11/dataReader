@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const arrayOne = [12,74,82,723,674,782,72,75,69,64,999,82]
-const arrayTwo = [16,74,928,73,545,721,74,8,6721,171,999,12]
+const arrayOne = Array.from({length: 50}, () => Math.floor(Math.random() * 100))
+const arrayTwo = Array.from({length: 50}, () => Math.floor(Math.random() * 100))
 
 const mapPattern = (one, two) => {
       let map = {}
