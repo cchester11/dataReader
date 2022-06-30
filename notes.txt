@@ -10,3 +10,5 @@
 // - homepage.js will consist of a chain of functions
 // -  1. writeJSON file will execute at addEventListener for homepage button
 // -  2. dom.js functions will run to populate index.html with new set of numbers
+
+// add new set to the data map that keeps track of the total number of numbers in the data set
