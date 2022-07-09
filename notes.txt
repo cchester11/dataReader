@@ -4,11 +4,9 @@
 // - send the user to index.html after the button is pressed
 
 // Generate new Data 
-// - import writeJSON.js file into homepage.js file
-// - import dom.js into homepage.js file 
-// - revisit dom.js and turn it into a file consisting of portable functions
-// - homepage.js will consist of a chain of functions
-// -  1. writeJSON file will execute at addEventListener for homepage button
+// - import writeJSON.js file into generateData.js file (check)
+// - generateData.js will consist of a chain of functions
+// -  1. writeJSON file will execute at addEventListener for generateData button
 // -  2. dom.js functions will run to populate index.html with new set of numbers
 
 // add new set to the data map that keeps track of the total number of numbers in the data set
