@@ -11,7 +11,7 @@ const signal = controller.signal
 // }
 
 const generateDataBtn = () => {
-      fetch('localhost:3001/generate', {
+      fetch('http://localhost:3001/generate', {
             method: 'get',
             signal: signal
       })

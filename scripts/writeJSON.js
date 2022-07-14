@@ -71,3 +71,5 @@ const mapPattern = (one, two) => {
 }
 
 mapPattern(arrayOne, arrayTwo)
+
+module.exports = mapPattern
