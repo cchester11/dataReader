@@ -1,6 +1,6 @@
 // this file just needs to reinitialize the function which creates our json
 // then redirect us to the index page which will take care of the rest
-const generateDataBtn = document.querySelector('#generateResults')
+// const generateDataBtn = document.querySelector('#generateResults')
 const controller = new AbortController()
 const signal = controller.signal
 
@@ -10,7 +10,7 @@ const signal = controller.signal
 //       controller.abort()
 // }
 
-generateDataBtn.addEventListener('click', () => {
+const generateDataBtn = () => {
       fetch('localhost:3001/generate', {
             method: 'get',
             signal: signal
@@ -24,4 +24,4 @@ generateDataBtn.addEventListener('click', () => {
                   throw new Error(err)
             }
       })
-})
+}

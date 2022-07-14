@@ -17,6 +17,7 @@ app.get('/data', (req, res) => {
 app.get('/generate', (req, res) => {
       writeJSON().then(() => {
             res.json(data)
+            return
       })
 })
 
