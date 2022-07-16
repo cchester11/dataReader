@@ -12,7 +12,7 @@ const signal = controller.signal
 
 const generateDataBtn = async () => {
       await fetch('http://localhost:3001/generate', {
-            method: 'get',
+            method:'get',
             signal: signal
       })
       .then(() => {

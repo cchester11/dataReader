@@ -11,11 +11,11 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/home', (req, res) => {
       res.sendFile(path.join(__dirname, './public/home.html'))
 })
-app.get('/data', (req, res) => {
-      res.json(data)
-})
 app.get('/generate', (req, res) => {
       mapPattern()
+      res.json(data)
+})
+app.get('/data', (req, res) => {
       res.json(data)
 })
 
