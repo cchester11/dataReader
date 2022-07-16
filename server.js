@@ -15,7 +15,7 @@ app.get('/data', (req, res) => {
       res.json(data)
 })
 app.get('/generate', (req, res) => {
-      mapPattern.then(() => res.json(data))
+      mapPattern().then(() => res.json(data))
 })
 
 app.listen(PORT, (err) => {

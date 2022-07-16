@@ -71,4 +71,4 @@ const mapPattern = () => {
       })
 }
 
-module.exports = mapPattern
+module.exports = { mapPattern }
