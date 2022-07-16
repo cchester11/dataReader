@@ -10,8 +10,8 @@ const signal = controller.signal
 //       controller.abort()
 // }
 
-const generateDataBtn = () => {
-      fetch('http://localhost:3001/generate', {
+const generateDataBtn = async () => {
+      await fetch('http://localhost:3001/generate', {
             method: 'get',
             signal: signal
       })

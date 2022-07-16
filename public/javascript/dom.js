@@ -3,6 +3,7 @@ const data_here = document.getElementById('data_here')
 const printNumbers = async () => {
       const data = await fetch("http://localhost:3001/data")
       data.json().then(res => {
+            console.log('successfully pulled database')
             Object.keys(res).forEach(( key ) => {
                   let masterForItem = document.createElement('div')
                   let bodyOfItem = document.createElement('div')
