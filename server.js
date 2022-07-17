@@ -28,8 +28,11 @@ app.get('/data', (req, res) => {
 // if data changes restart the server
 // code here
 watcher.on('change', (path) => { log(`File ${path} has been changed`)})
+// watcher.on('all', () => {
+//       server.close()
+// })
 
-app.listen(PORT, (err) => {
+const server = app.listen(PORT, (err) => {
       if(err) {
             throw new Error(err)
       } else {
