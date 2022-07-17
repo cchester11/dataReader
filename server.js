@@ -1,8 +1,14 @@
 const express = require('express')
 const app = express()
 const path = require('path')
+const chokidar = require('chokidar')
 const data = require('./data/index.json')
 const  { mapPattern } = require('./scripts/writeJSON')
+
+const watcher = chokidar.watch('./data/index.json', {
+      persistent: true
+})
+const log = console.log.bind(console)
 
 const PORT = 3001
 
@@ -21,6 +27,7 @@ app.get('/data', (req, res) => {
 
 // if data changes restart the server
 // code here
+watcher.on('change', (path) => { log(`File ${path} has been changed`)})
 
 app.listen(PORT, (err) => {
       if(err) {
