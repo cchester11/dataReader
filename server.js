@@ -19,6 +19,9 @@ app.get('/data', (req, res) => {
       res.json(data)
 })
 
+// if data changes restart the server
+// code here
+
 app.listen(PORT, (err) => {
       if(err) {
             throw new Error(err)
