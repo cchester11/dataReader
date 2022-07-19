@@ -34,9 +34,8 @@ const server = app.listen(PORT, (err) => {
 })
 
 // if data changes restart the server
-// code here
 watcher.on('change', (path) => { log(`File ${path} has been changed`)})
-watcher.on('all', () => {
+watcher.on('change', () => {
       server.close()
       app.listen(PORT, err => {
             if(err) {
