@@ -28,13 +28,20 @@ app.get('/data', (req, res) => {
 // if data changes restart the server
 watcher.on('change', (path) => { log(`File ${path} has been changed`)})
 watcher.on('change', () => {
-      server.close()
-      app.listen(PORT, (err) => {
-            if(err) {
-                  throw new Error(err)
-            } else {
-                  console.log('Listening on PORT ' + PORT)
-            }
+      server.close(() => {
+            const server = express()
+            console.info('Server closed. Restarting..')
+
+            server.get('/', (req, res) => {
+                  res.sendFile(path.join(__dirname, './public/index.html'))
+            })
+            server.listen(PORT, (err) => {
+                  if(err) {
+                        throw new Error(err)
+                  } else {
+                        console.log('Listening on PORT ' + PORT)
+                  }
+            })
       })
 })
 
