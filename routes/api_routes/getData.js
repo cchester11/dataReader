@@ -4,8 +4,10 @@ const data = require('../../data/index.json')
 router.get('/data', (req, res) => {
       try {
             res.json(data)
-      } catch (err) {
-            throw new Error(err)
+      } catch {
+            err => {
+                  if(err) throw new Error(err)
+            }
       }
 })
 

@@ -1,11 +1,16 @@
 const data_here = document.getElementById('data_here')
 
 const printNumbers = async () => {
-      const data = await fetch("http://localhost:3001/api/data")
-      data.json()
+      await fetch("http://localhost:3001/api/data")
             .then(res => {
+                  if (!res.ok) {
+                        return alert(`Error: ${res.statusText}`)
+                  }
+                  return res.json()
+            })
+            .then(data => {
                   console.log('successfully pulled database')
-                  Object.keys(res).forEach((key) => {
+                  Object.keys(data).forEach((key) => {
                         let masterForItem = document.createElement('div')
                         let bodyOfItem = document.createElement('div')
                         let bodyText = document.createElement('div')
@@ -16,11 +21,11 @@ const printNumbers = async () => {
                         let indexOfOne = document.createElement('p')
                         let indexOfTwo = document.createElement('p')
 
-                        itemNumber.textContent = 'Item: ' + res[key].item
-                        itemAppearances.textContent = 'Number of Appearances: ' + res[key].appearances
-                        itemArrays.textContent = 'Arrays Present: ' + res[key].arrays_present
-                        indexOfOne.textContent = 'Index Of Presence in Array One: ' + res[key].indexes.index_of_one
-                        indexOfTwo.textContent = 'Index of Presence in Array Two: ' + res[key].indexes.index_of_two
+                        itemNumber.textContent = 'Item: ' + data[key].item
+                        itemAppearances.textContent = 'Number of Appearances: ' + data[key].appearances
+                        itemArrays.textContent = 'Arrays Present: ' + data[key].arrays_present
+                        indexOfOne.textContent = 'Index Of Presence in Array One: ' + data[key].indexes.index_of_one
+                        indexOfTwo.textContent = 'Index of Presence in Array Two: ' + data[key].indexes.index_of_two
 
                         masterForItem.setAttribute('class', 'card')
                         itemNumber.setAttribute('class', 'card-header')
@@ -40,5 +45,4 @@ const printNumbers = async () => {
                   })
             })
 }
-
 printNumbers()
