@@ -17,3 +17,6 @@
 // allow changes to data on the front end
 // - user can manipulate the text on the UI
 // - after user manipulates a field in the UI, a post request is sent to the database and the corresponding object takes on those changes
+
+// allow for different ways of sorting and building the json file 
+// - have multiple button options for building the index.html file out with data
