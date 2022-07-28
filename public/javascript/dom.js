@@ -1,5 +1,8 @@
 const data_here = document.getElementById('data_here')
 
+const controller = new AbortController()
+const signal = controller.signal
+
 const printNumbers = async () => {
       await fetch("http://localhost:3001/api/data")
             .then(res => {
@@ -45,4 +48,21 @@ const printNumbers = async () => {
                   })
             })
 }
+
+const generateNewData = async () => {
+      await fetch('http://localhost:3001/api/generate', {
+            method: 'get',
+            signal: signal
+      })
+      .then(() => {
+            document.location.reload(true)
+            controller.abort()
+      })
+      .catch(err => {
+            if(err) {
+                  throw new Error(err)
+            }
+      })
+}
+
 printNumbers()
