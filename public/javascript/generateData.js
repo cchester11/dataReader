@@ -8,7 +8,7 @@ const generateDataBtn = async () => {
       })
       .then(() => {
             controller.abort()
-            document.location.replace('/')
+            document.location.replace('/index')
       })
       .catch(err => {
             if(err) {
