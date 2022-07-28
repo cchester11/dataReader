@@ -19,11 +19,7 @@ watcher.on('change', () => {
       server.close(() => {
             const server = express()
             console.info('Server closed. Restarting..')
-
-            server.get('/', (req, res) => {
-                  res.sendFile(path.join(__dirname, './public/index.html'))
-                  console.log('index.html sent from watcher callback')
-            })
+            
             server.listen(PORT, (err) => {
                   if(err) {
                         throw new Error(err)
