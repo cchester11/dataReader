@@ -15,15 +15,15 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // if data changes restart the server
 watcher.on('change', (path) => { log(`File ${path} has been changed`)})
-watcher.on('change', () => {
-      server.close(() => {
-            log('Server Restarting...')
-            const server = express()
-            server.listen(PORT, () => {
-                  log(`Resarted. Listening on PORT ${PORT}`)
-            })
-      })
-})
+// watcher.on('change', () => {
+//       server.close(() => {
+//             log('Server Restarting...')
+//             const server = express()
+//             server.listen(PORT, () => {
+//                   log(`Resarted. Listening on PORT ${PORT}`)
+//             })
+//       })
+// })
 
 const server = app.listen(PORT, (err) => {
       if(err) {

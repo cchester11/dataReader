@@ -4,10 +4,8 @@
 // - send the user to index.html after the button is pressed
 
 // Generate new Data 
-// - import writeJSON.js file into generateData.js file (check)
-// - generateData.js will consist of a chain of functions
-// -  1. writeJSON file will execute at addEventListener for generateData button
-// -  2. dom.js functions will run to populate index.html with new set of numbers
+// click generate data btn to run the writeJSON script
+// fetch the new data and reload index page
 
 // add new set to the data map that keeps track of the total number of numbers in the data set
 // - at the end of writeJSON.js create a loop to go through the length of the map

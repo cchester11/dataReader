@@ -10,7 +10,7 @@ const hideResultsBtn = document.getElementById('hideResultsBtn')
 
 searchBtn.addEventListener('click', async () => {
       let text = searchBar.value
-      const data = await fetch('http://localhost:3001/data')
+      const data = await fetch('http://localhost:3001/api/data')
 
       data.json()
             .then(res => {
