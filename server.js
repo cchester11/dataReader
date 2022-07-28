@@ -18,6 +18,10 @@ watcher.on('change', (path) => { log(`File ${path} has been changed`)})
 watcher.on('change', () => {
       server.close(() => {
             log('Server Restarting...')
+            const server = express()
+            server.listen(PORT, () => {
+                  log(`Resarted. Listening on PORT ${PORT}`)
+            })
       })
 })
 
