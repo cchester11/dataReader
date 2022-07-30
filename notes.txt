@@ -3,7 +3,7 @@
 // - below the description is a pressable button used to generate a set of numbers using the writeJSON.js file
 // - send the user to index.html after the button is pressed
 
-// Generate new Data 
+// Generate new Data (short fix .. used nodemon to patch the server restarting issue) 
 // click generate data btn to run the writeJSON script
 // fetch the new data and reload index page
 
