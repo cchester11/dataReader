@@ -56,6 +56,7 @@ const generateNewData = async () => {
       })
       .then(() => {
             document.location.reload(true)
+            printNumbers()
             controller.abort()
       })
       .catch(err => {

@@ -7,7 +7,7 @@
     "test": "jest",
     "writeFile": "node ./scripts/writeJSON.js",
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
