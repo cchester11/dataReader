@@ -63,6 +63,13 @@ const mapPattern = () => {
             }
       }
 
+      let total = 'total';
+      let totalKeys = Object.keys(map).length
+
+      console.log(totalKeys)
+
+      map[total] = totalKeys
+
       fs.writeFile('./data/index.json', JSON.stringify(map), err => {
             if (err) {
                   throw new Error(err)
