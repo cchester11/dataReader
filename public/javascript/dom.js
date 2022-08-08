@@ -1,3 +1,4 @@
+const data_total = document.getElementById('data_total')
 const data_here = document.getElementById('data_here')
 
 const controller = new AbortController()
@@ -12,8 +13,27 @@ const printNumbers = async () => {
                   return res.json()
             })
             .then(data => {
-                  console.log('successfully pulled database')
+                  console.log('successfully pulled database..populating dom fields')
                   Object.keys(data).forEach((key) => {
+                        if (key === 'total') {
+                              let masterForTotal = document.createElement('div')
+                              let bodyOfTotal = document.createElement('h3')
+                              let bodyOfText = document.createElement('div')
+                              let bodyText = document.createElement('p')
+
+                              masterForTotal.setAttribute('class', 'card')
+                              bodyOfTotal.setAttribute('class', 'card-header')
+                              bodyOfText.setAttribute('class', 'list-group list-group-flush')
+                              bodyText.setAttribute('class', 'list-group-item')
+
+                              bodyOfTotal.textContent = 'Total'
+                              bodyText.textContent = 'total'
+
+                              data_total.appendChild(masterForTotal)
+                              masterForTotal.appendChild(bodyOfTotal)
+                              bodyOfTotal.appendChild(bodyOfText)
+                              bodyOfText.appendChild(bodyText)
+                        }
                         let masterForItem = document.createElement('div')
                         let bodyOfItem = document.createElement('div')
                         let bodyText = document.createElement('div')
@@ -54,16 +74,16 @@ const generateNewData = async () => {
             method: 'get',
             signal: signal
       })
-      .then(() => {
-            document.location.reload(true)
-            printNumbers()
-            controller.abort()
-      })
-      .catch(err => {
-            if(err) {
-                  throw new Error(err)
-            }
-      })
+            .then(() => {
+                  document.location.reload(true)
+                  printNumbers()
+                  controller.abort()
+            })
+            .catch(err => {
+                  if (err) {
+                        throw new Error(err)
+                  }
+            })
 }
 
 printNumbers()
