@@ -17,22 +17,24 @@ const printNumbers = async () => {
                   Object.keys(data).forEach((key) => {
                         if (key === 'total') {
                               let masterForTotal = document.createElement('div')
-                              let bodyOfTotal = document.createElement('h3')
-                              let bodyOfText = document.createElement('div')
-                              let bodyText = document.createElement('p')
+                              let containerForTotal = document.createElement('div')
+                              let subContainerForTotal = document.createElement('div')
+                              let totalHeader = document.createElement('h3')
+                              let totalText = document.createElement('h4')
 
                               masterForTotal.setAttribute('class', 'card')
-                              bodyOfTotal.setAttribute('class', 'card-header')
-                              bodyOfText.setAttribute('class', 'list-group list-group-flush')
-                              bodyText.setAttribute('class', 'list-group-item')
+                              containerForTotal.setAttribute('class', 'list-group list-group-flush')
+                              totalHeader.setAttribute('class', 'card-header')
+                              subContainerForTotal.setAttribute('class', 'list-group-item')
 
-                              bodyOfTotal.textContent = 'Total'
-                              bodyText.textContent = data[key]
+                              totalHeader.textContent = 'Total'
+                              totalText.textContent = "Data set includes " + data[key] + " numbers"
 
                               data_total.appendChild(masterForTotal)
-                              masterForTotal.appendChild(bodyOfTotal)
-                              bodyOfTotal.appendChild(bodyOfText)
-                              bodyOfText.appendChild(bodyText)
+                              masterForTotal.appendChild(containerForTotal)
+                              containerForTotal.appendChild(totalHeader)
+                              containerForTotal.appendChild(subContainerForTotal)
+                              subContainerForTotal.appendChild(totalText)
                         }
                         let masterForItem = document.createElement('div')
                         let bodyOfItem = document.createElement('div')
@@ -51,9 +53,9 @@ const printNumbers = async () => {
                         indexOfTwo.textContent = 'Index of Presence in Array Two: ' + data[key].indexes.index_of_two
 
                         masterForItem.setAttribute('class', 'card')
+                        bodyOfItem.setAttribute('class', 'list-group list-group-flush')
                         itemNumber.setAttribute('class', 'card-header')
                         // itemNumber.setAttribute('class', 'bg-primary')
-                        bodyOfItem.setAttribute('class', 'list-group list-group-flush')
                         bodyText.setAttribute('class', 'list-group-item')
                         // masterForItem.setAttribute('class', 'bg-info')
 
