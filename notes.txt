@@ -7,12 +7,12 @@
 // click generate data btn to run the writeJSON script
 // fetch the new data and reload index page
 
-// add new set to the data map that keeps track of the total number of numbers in the data set
+// add new set to the data map that keeps track of the total number of numbers in the data set (done)
 // - at the end of writeJSON.js create a loop to go through the length of the map
 // - write a new object to map with a key of total and a value of the length of the map
 // - display total as a div at the top of the screen
 
-// allow changes to data on the front end
+// allow changes to data on the front end 
 // - user can manipulate the text on the UI
 // - after user manipulates a field in the UI, a post request is sent to the database and the corresponding object takes on those changes
 
