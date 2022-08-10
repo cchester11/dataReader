@@ -27,7 +27,7 @@ const printNumbers = async () => {
                               bodyText.setAttribute('class', 'list-group-item')
 
                               bodyOfTotal.textContent = 'Total'
-                              bodyText.textContent = 'total'
+                              bodyText.textContent = data[key]
 
                               data_total.appendChild(masterForTotal)
                               masterForTotal.appendChild(bodyOfTotal)
@@ -75,14 +75,14 @@ const generateNewData = async () => {
             signal: signal
       })
             .then(() => {
-                  document.location.reload(true)
-                  printNumbers()
-                  controller.abort()
+                  setTimeout(() => {
+                        document.location.reload(true)
+                        // printNumbers()
+                        // controller.abort()
+                  }, 500)
             })
             .catch(err => {
-                  if (err) {
-                        throw new Error(err)
-                  }
+                  throw new Error(err)
             })
 }
 
