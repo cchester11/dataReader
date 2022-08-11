@@ -12,9 +12,18 @@
 // - write a new object to map with a key of total and a value of the length of the map
 // - display total as a div at the top of the screen
 
+// add a number to the dataset
+// - click the add number button
+// - a form uploads that you can fill with the necessary information
+// - when asked what arrays present a checkbox option appears in which you can select array one or two or both
+// - error checks need to be in place. for ex: you cannot declare that the number 56 will present at index 12 in array one if you did not select array one as one of the arrays the number would be present in
+// - the finished form will be sent as a post request to the json file
+
 // allow changes to data on the front end 
-// - user can manipulate the text on the UI
-// - after user manipulates a field in the UI, a post request is sent to the database and the corresponding object takes on those changes
+// - user can click any element on the page
+// - them element clicked becomes editable (textbox) and the itemNumber associated with that element is stored
+// - after the edit is completed by the user the new value of the element is sent as a post request to the number in the JSON file that matches the itemNumber stored
+// - on "unfocus" the element defaults back a p tag
 
 // allow for different ways of sorting and building the json file 
 // - have multiple button options for building the index.html file out with data
