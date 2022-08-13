@@ -77,11 +77,18 @@ const generateNewData = async () => {
             signal: signal
       })
             .then(() => {
-                  setTimeout(() => {
-                        document.location.reload(true)
-                        // printNumbers()
-                        // controller.abort()
-                  }, 500)
+                  // fetch database
+                  fetch('http://localhost:3001/api/data', {
+                        method: 'get',
+                        signal: signal
+                  })
+                        .then(() => {
+                              setTimeout(() => {
+                                    document.location.reload(true)
+                                    // printNumbers()
+                                    // controller.abort()
+                              }, 500)
+                        })
             })
             .catch(err => {
                   throw new Error(err)
