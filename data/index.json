@@ -1,267 +1,277 @@
 {
   "0": {
     "item": 0,
-    "appearances": 3,
-    "arrays_present": ["one", "two"],
+    "appearances": 2,
+    "arrays_present": ["two", "two"],
     "indexes": {
-      "index_of_one": [15],
-      "index_of_two": [24, 45],
-      "arrays": ["one", "two"]
+      "index_of_one": [],
+      "index_of_two": [15, 31],
+      "arrays": ["two", "two"]
     }
   },
   "1": {
     "item": 1,
     "appearances": 2,
-    "arrays_present": ["one"],
+    "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [30, 36],
-      "index_of_two": [],
-      "arrays": ["one"]
+      "index_of_one": [3],
+      "index_of_two": [37],
+      "arrays": ["one", "two"]
     }
   },
   "2": {
     "item": 2,
     "appearances": 1,
     "arrays_present": ["one"],
-    "indexes": { "index_of_one": [19], "index_of_two": [], "arrays": ["one"] }
-  },
-  "3": {
-    "item": 3,
-    "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [2], "arrays": ["two"] }
-  },
-  "4": {
-    "item": 4,
-    "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [2], "index_of_two": [], "arrays": ["one"] }
+    "indexes": { "index_of_one": [26], "index_of_two": [], "arrays": ["one"] }
   },
   "5": {
     "item": 5,
-    "appearances": 2,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [11],
-      "index_of_two": [15],
-      "arrays": ["one", "two"]
-    }
-  },
-  "7": {
-    "item": 7,
     "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [24], "index_of_two": [], "arrays": ["one"] }
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [14], "arrays": ["two"] }
   },
   "8": {
     "item": 8,
     "appearances": 1,
     "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [33], "arrays": ["two"] }
+    "indexes": { "index_of_one": [], "index_of_two": [34], "arrays": ["two"] }
   },
-  "10": {
-    "item": 10,
-    "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [14], "arrays": ["two"] }
+  "11": {
+    "item": 11,
+    "appearances": 2,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [5],
+      "index_of_two": [43],
+      "arrays": ["one", "two"]
+    }
   },
   "12": {
     "item": 12,
     "appearances": 1,
     "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [38], "arrays": ["two"] }
+    "indexes": { "index_of_one": [], "index_of_two": [41], "arrays": ["two"] }
   },
   "13": {
     "item": 13,
-    "appearances": 2,
-    "arrays_present": ["one"],
+    "appearances": 3,
+    "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [23, 45],
-      "index_of_two": [],
-      "arrays": ["one"]
+      "index_of_one": [39],
+      "index_of_two": [16, 46],
+      "arrays": ["one", "two"]
     }
   },
   "14": {
     "item": 14,
-    "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [6], "index_of_two": [], "arrays": ["one"] }
+    "appearances": 3,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [24],
+      "index_of_two": [7, 17],
+      "arrays": ["one", "two"]
+    }
   },
-  "16": {
-    "item": 16,
+  "18": {
+    "item": 18,
     "appearances": 1,
     "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [29], "arrays": ["two"] }
-  },
-  "17": {
-    "item": 17,
-    "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [20], "index_of_two": [], "arrays": ["one"] }
+    "indexes": { "index_of_one": [], "index_of_two": [30], "arrays": ["two"] }
   },
   "19": {
     "item": 19,
     "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [2], "arrays": ["two"] }
+  },
+  "20": {
+    "item": 20,
+    "appearances": 3,
     "arrays_present": ["one"],
-    "indexes": { "index_of_one": [32], "index_of_two": [], "arrays": ["one"] }
+    "indexes": {
+      "index_of_one": [12, 40, 44],
+      "index_of_two": [],
+      "arrays": ["one"]
+    }
+  },
+  "21": {
+    "item": 21,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [28], "index_of_two": [], "arrays": ["one"] }
   },
   "22": {
     "item": 22,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [44], "arrays": ["two"] }
+  },
+  "23": {
+    "item": 23,
+    "appearances": 3,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [4],
+      "index_of_two": [11, 21],
+      "arrays": ["one", "two"]
+    }
+  },
+  "24": {
+    "item": 24,
     "appearances": 2,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [0, 8], "index_of_two": [], "arrays": ["one"] }
+    "arrays_present": ["two", "two"],
+    "indexes": {
+      "index_of_one": [],
+      "index_of_two": [22, 29],
+      "arrays": ["two", "two"]
+    }
   },
   "25": {
     "item": 25,
     "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [14], "index_of_two": [], "arrays": ["one"] }
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [8], "arrays": ["two"] }
+  },
+  "26": {
+    "item": 26,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [23], "arrays": ["two"] }
   },
   "27": {
     "item": 27,
     "appearances": 2,
-    "arrays_present": ["one"],
-    "indexes": {
-      "index_of_one": [34, 40],
-      "index_of_two": [],
-      "arrays": ["one"]
-    }
-  },
-  "28": {
-    "item": 28,
-    "appearances": 3,
     "arrays_present": ["two", "two"],
     "indexes": {
       "index_of_one": [],
-      "index_of_two": [31, 32, 49],
+      "index_of_two": [13, 48],
       "arrays": ["two", "two"]
+    }
+  },
+  "29": {
+    "item": 29,
+    "appearances": 2,
+    "arrays_present": ["one"],
+    "indexes": {
+      "index_of_one": [29, 45],
+      "index_of_two": [],
+      "arrays": ["one"]
     }
   },
   "30": {
     "item": 30,
-    "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [42], "arrays": ["two"] }
-  },
-  "31": {
-    "item": 31,
-    "appearances": 4,
+    "appearances": 6,
     "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [13, 16],
-      "index_of_two": [16, 47],
+      "index_of_one": [32, 34, 49],
+      "index_of_two": [10, 18, 19],
       "arrays": ["one", "two"]
     }
   },
-  "32": {
-    "item": 32,
-    "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [26], "arrays": ["two"] }
-  },
-  "33": {
-    "item": 33,
-    "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [25], "index_of_two": [], "arrays": ["one"] }
-  },
-  "35": {
-    "item": 35,
-    "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [0], "arrays": ["two"] }
-  },
-  "37": {
-    "item": 37,
-    "appearances": 2,
+  "34": {
+    "item": 34,
+    "appearances": 3,
     "arrays_present": ["one"],
     "indexes": {
-      "index_of_one": [37, 42],
+      "index_of_one": [7, 10, 21],
       "index_of_two": [],
       "arrays": ["one"]
     }
   },
-  "38": {
-    "item": 38,
+  "36": {
+    "item": 36,
     "appearances": 1,
     "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [35], "arrays": ["two"] }
+    "indexes": { "index_of_one": [], "index_of_two": [28], "arrays": ["two"] }
   },
-  "39": {
-    "item": 39,
-    "appearances": 1,
+  "38": {
+    "item": 38,
+    "appearances": 2,
     "arrays_present": ["one"],
-    "indexes": { "index_of_one": [43], "index_of_two": [], "arrays": ["one"] }
+    "indexes": {
+      "index_of_one": [1, 14],
+      "index_of_two": [],
+      "arrays": ["one"]
+    }
+  },
+  "42": {
+    "item": 42,
+    "appearances": 4,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [2, 11, 17],
+      "index_of_two": [0],
+      "arrays": ["one", "two"]
+    }
   },
   "43": {
     "item": 43,
     "appearances": 1,
     "arrays_present": ["one"],
-    "indexes": { "index_of_one": [26], "index_of_two": [], "arrays": ["one"] }
+    "indexes": { "index_of_one": [42], "index_of_two": [], "arrays": ["one"] }
   },
-  "46": {
-    "item": 46,
-    "appearances": 2,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [35],
-      "index_of_two": [43],
-      "arrays": ["one", "two"]
-    }
+  "45": {
+    "item": 45,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [43], "index_of_two": [], "arrays": ["one"] }
   },
   "47": {
     "item": 47,
     "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [10], "arrays": ["two"] }
-  },
-  "49": {
-    "item": 49,
-    "appearances": 1,
     "arrays_present": ["one"],
-    "indexes": { "index_of_one": [4], "index_of_two": [], "arrays": ["one"] }
+    "indexes": { "index_of_one": [15], "index_of_two": [], "arrays": ["one"] }
   },
-  "50": {
-    "item": 50,
+  "48": {
+    "item": 48,
     "appearances": 3,
     "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [1, 12],
-      "index_of_two": [40],
+      "index_of_one": [27, 33],
+      "index_of_two": [6],
+      "arrays": ["one", "two"]
+    }
+  },
+  "49": {
+    "item": 49,
+    "appearances": 2,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [47],
+      "index_of_two": [5],
       "arrays": ["one", "two"]
     }
   },
   "52": {
     "item": 52,
     "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [10], "index_of_two": [], "arrays": ["one"] }
-  },
-  "53": {
-    "item": 53,
-    "appearances": 2,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [41],
-      "index_of_two": [28],
-      "arrays": ["one", "two"]
-    }
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [38], "arrays": ["two"] }
   },
   "54": {
     "item": 54,
     "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [6], "arrays": ["two"] }
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [30], "index_of_two": [], "arrays": ["one"] }
+  },
+  "55": {
+    "item": 55,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [35], "index_of_two": [], "arrays": ["one"] }
   },
   "56": {
     "item": 56,
-    "appearances": 3,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [17, 49],
-      "index_of_two": [9],
-      "arrays": ["one", "two"]
-    }
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [0], "index_of_two": [], "arrays": ["one"] }
+  },
+  "57": {
+    "item": 57,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [13], "index_of_two": [], "arrays": ["one"] }
   },
   "59": {
     "item": 59,
@@ -269,165 +279,153 @@
     "arrays_present": ["one"],
     "indexes": { "index_of_one": [22], "index_of_two": [], "arrays": ["one"] }
   },
-  "61": {
-    "item": 61,
+  "60": {
+    "item": 60,
     "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [23], "arrays": ["two"] }
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [20], "index_of_two": [], "arrays": ["one"] }
   },
   "62": {
     "item": 62,
     "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [48], "index_of_two": [], "arrays": ["one"] }
-  },
-  "63": {
-    "item": 63,
-    "appearances": 1,
     "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [19], "arrays": ["two"] }
-  },
-  "64": {
-    "item": 64,
-    "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [28], "index_of_two": [], "arrays": ["one"] }
+    "indexes": { "index_of_one": [], "index_of_two": [26], "arrays": ["two"] }
   },
   "65": {
     "item": 65,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [49], "arrays": ["two"] }
+  },
+  "66": {
+    "item": 66,
     "appearances": 3,
     "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [33, 44],
-      "index_of_two": [21],
+      "index_of_one": [37],
+      "index_of_two": [12, 25],
       "arrays": ["one", "two"]
-    }
-  },
-  "67": {
-    "item": 67,
-    "appearances": 2,
-    "arrays_present": ["one"],
-    "indexes": {
-      "index_of_one": [31, 46],
-      "index_of_two": [],
-      "arrays": ["one"]
     }
   },
   "68": {
     "item": 68,
     "appearances": 2,
-    "arrays_present": ["one", "two"],
+    "arrays_present": ["two", "two"],
     "indexes": {
-      "index_of_one": [27],
-      "index_of_two": [3],
-      "arrays": ["one", "two"]
+      "index_of_one": [],
+      "index_of_two": [9, 39],
+      "arrays": ["two", "two"]
     }
   },
   "69": {
     "item": 69,
-    "appearances": 2,
-    "arrays_present": ["two", "two"],
-    "indexes": {
-      "index_of_one": [],
-      "index_of_two": [11, 25],
-      "arrays": ["two", "two"]
-    }
-  },
-  "72": {
-    "item": 72,
-    "appearances": 2,
-    "arrays_present": ["two", "two"],
-    "indexes": {
-      "index_of_one": [],
-      "index_of_two": [1, 44],
-      "arrays": ["two", "two"]
-    }
-  },
-  "73": {
-    "item": 73,
-    "appearances": 2,
+    "appearances": 3,
     "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [38],
-      "index_of_two": [34],
+      "index_of_one": [16],
+      "index_of_two": [4, 20],
       "arrays": ["one", "two"]
     }
   },
-  "74": {
-    "item": 74,
-    "appearances": 2,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [29],
-      "index_of_two": [46],
-      "arrays": ["one", "two"]
-    }
-  },
-  "76": {
-    "item": 76,
+  "70": {
+    "item": 70,
     "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [36], "arrays": ["two"] }
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [36], "index_of_two": [], "arrays": ["one"] }
+  },
+  "77": {
+    "item": 77,
+    "appearances": 2,
+    "arrays_present": ["one"],
+    "indexes": {
+      "index_of_one": [25, 46],
+      "index_of_two": [],
+      "arrays": ["one"]
+    }
   },
   "78": {
     "item": 78,
-    "appearances": 1,
-    "arrays_present": ["one"],
-    "indexes": { "index_of_one": [39], "index_of_two": [], "arrays": ["one"] }
+    "appearances": 2,
+    "arrays_present": ["two", "two"],
+    "indexes": {
+      "index_of_one": [],
+      "index_of_two": [3, 36],
+      "arrays": ["two", "two"]
+    }
   },
   "80": {
     "item": 80,
-    "appearances": 2,
-    "arrays_present": ["two", "two"],
-    "indexes": {
-      "index_of_one": [],
-      "index_of_two": [30, 48],
-      "arrays": ["two", "two"]
-    }
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [1], "arrays": ["two"] }
   },
   "81": {
     "item": 81,
-    "appearances": 2,
-    "arrays_present": ["two", "two"],
-    "indexes": {
-      "index_of_one": [],
-      "index_of_two": [4, 18],
-      "arrays": ["two", "two"]
-    }
-  },
-  "83": {
-    "item": 83,
-    "appearances": 4,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [18, 21],
-      "index_of_two": [8, 12],
-      "arrays": ["one", "two"]
-    }
-  },
-  "86": {
-    "item": 86,
-    "appearances": 2,
-    "arrays_present": ["two", "two"],
-    "indexes": {
-      "index_of_one": [],
-      "index_of_two": [13, 37],
-      "arrays": ["two", "two"]
-    }
-  },
-  "87": {
-    "item": 87,
     "appearances": 1,
     "arrays_present": ["one"],
     "indexes": { "index_of_one": [9], "index_of_two": [], "arrays": ["one"] }
   },
-  "90": {
-    "item": 90,
+  "82": {
+    "item": 82,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [33], "arrays": ["two"] }
+  },
+  "84": {
+    "item": 84,
+    "appearances": 2,
+    "arrays_present": ["one"],
+    "indexes": {
+      "index_of_one": [19, 48],
+      "index_of_two": [],
+      "arrays": ["one"]
+    }
+  },
+  "85": {
+    "item": 85,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [31], "index_of_two": [], "arrays": ["one"] }
+  },
+  "86": {
+    "item": 86,
+    "appearances": 1,
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [38], "index_of_two": [], "arrays": ["one"] }
+  },
+  "87": {
+    "item": 87,
+    "appearances": 3,
+    "arrays_present": ["two", "two"],
+    "indexes": {
+      "index_of_one": [],
+      "index_of_two": [24, 32, 45],
+      "arrays": ["two", "two"]
+    }
+  },
+  "88": {
+    "item": 88,
     "appearances": 2,
     "arrays_present": ["one", "two"],
     "indexes": {
-      "index_of_one": [5],
-      "index_of_two": [27],
+      "index_of_one": [8],
+      "index_of_two": [35],
+      "arrays": ["one", "two"]
+    }
+  },
+  "89": {
+    "item": 89,
+    "appearances": 1,
+    "arrays_present": ["two"],
+    "indexes": { "index_of_one": [], "index_of_two": [27], "arrays": ["two"] }
+  },
+  "91": {
+    "item": 91,
+    "appearances": 4,
+    "arrays_present": ["one", "two"],
+    "indexes": {
+      "index_of_one": [6, 23],
+      "index_of_two": [40, 42],
       "arrays": ["one", "two"]
     }
   },
@@ -435,49 +433,19 @@
     "item": 92,
     "appearances": 1,
     "arrays_present": ["one"],
-    "indexes": { "index_of_one": [47], "index_of_two": [], "arrays": ["one"] }
+    "indexes": { "index_of_one": [18], "index_of_two": [], "arrays": ["one"] }
   },
-  "94": {
-    "item": 94,
-    "appearances": 2,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [7],
-      "index_of_two": [39],
-      "arrays": ["one", "two"]
-    }
-  },
-  "96": {
-    "item": 96,
-    "appearances": 2,
-    "arrays_present": ["one", "two"],
-    "indexes": {
-      "index_of_one": [3],
-      "index_of_two": [5],
-      "arrays": ["one", "two"]
-    }
-  },
-  "97": {
-    "item": 97,
+  "95": {
+    "item": 95,
     "appearances": 1,
     "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [17], "arrays": ["two"] }
+    "indexes": { "index_of_one": [], "index_of_two": [47], "arrays": ["two"] }
   },
   "98": {
     "item": 98,
     "appearances": 1,
-    "arrays_present": ["two"],
-    "indexes": { "index_of_one": [], "index_of_two": [41], "arrays": ["two"] }
+    "arrays_present": ["one"],
+    "indexes": { "index_of_one": [41], "index_of_two": [], "arrays": ["one"] }
   },
-  "99": {
-    "item": 99,
-    "appearances": 3,
-    "arrays_present": ["two", "two"],
-    "indexes": {
-      "index_of_one": [],
-      "index_of_two": [7, 20, 22],
-      "arrays": ["two", "two"]
-    }
-  },
-  "total": 62
+  "total": 58
 }
