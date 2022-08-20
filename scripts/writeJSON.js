@@ -70,6 +70,7 @@ const mapPattern = () => {
 
       map[total] = totalKeys
 
+      // return map
       fs.writeFile('./data/index.json', JSON.stringify(map), err => {
             if (err) {
                   throw new Error(err)
