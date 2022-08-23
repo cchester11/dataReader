@@ -11,7 +11,6 @@ const printNumbers = async () => {
                   if (!res.ok) {
                         return alert(`Error: ${res.statusText}`)
                   }
-                  // console.log(res to see what we get)
                   return res.json()
             })
             .then(data => {
