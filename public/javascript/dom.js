@@ -5,8 +5,7 @@ const controller = new AbortController()
 const signal = controller.signal
 
 const printNumbers = async () => {
-      // fetch /api/generate
-      await fetch("http://localhost:3001/api/data")
+      await fetch("http://localhost:3001/api/generate")
             .then(res => {
                   if (!res.ok) {
                         return alert(`Error: ${res.statusText}`)

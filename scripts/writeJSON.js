@@ -1,6 +1,4 @@
 const mapPattern = () => {
-      const fs = require('fs')
-
       const arrayOne = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
       const arrayTwo = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
 
@@ -66,17 +64,11 @@ const mapPattern = () => {
       let total = 'total';
       let totalKeys = Object.keys(map).length
 
-      console.log(totalKeys)
+      console.log('total numbers generated: ' + totalKeys)
 
       map[total] = totalKeys
 
-      // return map
-      fs.writeFile('./data/index.json', JSON.stringify(map), err => {
-            if (err) {
-                  throw new Error(err)
-            }
-            console.log('JSON file written successfully')
-      })
+      return map
 }
 
 module.exports = { mapPattern }
