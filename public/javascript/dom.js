@@ -4,16 +4,19 @@ const data_here = document.getElementById('data_here')
 const controller = new AbortController()
 const signal = controller.signal
 
-const printNumbers = async () => {
-      await fetch("http://localhost:3001/api/generate")
-            .then(res => {
-                  if (!res.ok) {
-                        return alert(`Error: ${res.statusText}`)
-                  }
-                  return res.json()
-            })
-            .then(data => {
-                  console.log('successfully pulled database..populating dom fields')
+const generateNewData = async () => {
+      await fetch('http://localhost:3001/api/generate', {
+            method: 'get',
+            signal: signal
+      })
+      .then(res => {
+            if(!res.ok) {
+                  return alert('Error: ' + res.statusText)
+            }
+            return res.json()
+      })
+      .then(data => {
+            console.log('successfully pulled database..populating dom fields')
                   Object.keys(data).forEach((key) => {
                         if (key === 'total') {
                               let masterForTotal = document.createElement('div')
@@ -70,29 +73,3 @@ const printNumbers = async () => {
                   })
             })
 }
-
-const generateNewData = async () => {
-      await fetch('http://localhost:3001/api/generate', {
-            method: 'get',
-            signal: signal
-      })
-            .then(() => {
-                  // fetch database
-                  fetch('http://localhost:3001/api/data', {
-                        method: 'get',
-                        signal: signal
-                  })
-                        .then(() => {
-                              setTimeout(() => {
-                                    document.location.reload(true)
-                                    // printNumbers()
-                                    // controller.abort()
-                              }, 500)
-                        })
-            })
-            .catch(err => {
-                  throw new Error(err)
-            })
-}
-
-printNumbers()
