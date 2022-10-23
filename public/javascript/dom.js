@@ -16,6 +16,8 @@ const generateNewData = async () => {
             return res.json()
       })
       .then(data => {
+            data_total.replaceChildren();
+            data_here.replaceChildren();
             console.log('successfully pulled database..populating dom fields')
                   Object.keys(data).forEach((key) => {
                         if (key === 'total') {
