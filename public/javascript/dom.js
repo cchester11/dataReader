@@ -4,6 +4,8 @@ const data_here = document.getElementById('data_here')
 const controller = new AbortController()
 const signal = controller.signal
 
+let localMap = {}
+
 const generateNewData = async () => {
       await fetch('http://localhost:3001/api/generate', {
             method: 'get',
@@ -13,7 +15,8 @@ const generateNewData = async () => {
             if(!res.ok) {
                   return alert('Error: ' + res.statusText)
             }
-            return res.json()
+            const data = res.json()
+            return data
       })
       .then(data => {
             data_total.replaceChildren();

@@ -66,6 +66,13 @@ const mapPattern = () => {
 
       console.log('total numbers generated: ' + totalKeys)
 
+      // if(map.length > 50) {
+      //       for(let i = 0; i < map.length - 1; i ++) {
+      //             // remove the last number until the map has 50 numbers
+      //             // map.pop(map[i])
+      //       }
+      // }
+
       map[total] = totalKeys
 
       return map
