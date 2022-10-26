@@ -6,6 +6,18 @@ const signal = controller.signal
 
 let localMap = {}
 
+function saveMap (data) {
+      localStorage.setItem('localMap', JSON.stringify(data))
+}
+
+function loadMap() {
+      JSON.parse(localStorage.getItem('localMap'))
+}
+
+function onReload() {
+      // once the page is reloaded, copy below stpes of generateNewData function but with locally stored data
+}
+
 const generateNewData = async () => {
       await fetch('http://localhost:3001/api/generate', {
             method: 'get',
@@ -19,8 +31,12 @@ const generateNewData = async () => {
             return data
       })
       .then(data => {
+            localMap = {data}
+            saveMap(localMap)
+
             data_total.replaceChildren();
             data_here.replaceChildren();
+
             console.log('successfully pulled database..populating dom fields')
                   Object.keys(data).forEach((key) => {
                         if (key === 'total') {
