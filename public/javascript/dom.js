@@ -10,12 +10,63 @@ function saveMap (data) {
       localStorage.setItem('localMap', JSON.stringify(data))
 }
 
-function loadMap() {
-      JSON.parse(localStorage.getItem('localMap'))
-}
-
 function onReload() {
-      // once the page is reloaded, copy below stpes of generateNewData function but with locally stored data
+      const map = JSON.parse(localStorage.getItem('localMap'))
+
+      Object.keys(map).forEach((key) => {
+            if (key === 'total') {
+                  let masterForTotal = document.createElement('div')
+                  let containerForTotal = document.createElement('div')
+                  let subContainerForTotal = document.createElement('div')
+                  let totalHeader = document.createElement('h3')
+                  let totalText = document.createElement('h4')
+
+                  masterForTotal.setAttribute('class', 'card')
+                  containerForTotal.setAttribute('class', 'list-group list-group-flush')
+                  totalHeader.setAttribute('class', 'card-header')
+                  subContainerForTotal.setAttribute('class', 'list-group-item')
+
+                  totalHeader.textContent = 'Total'
+                  totalText.textContent = "Data set includes " + map[key] + " numbers"
+
+                  data_total.appendChild(masterForTotal)
+                  masterForTotal.appendChild(containerForTotal)
+                  containerForTotal.appendChild(totalHeader)
+                  containerForTotal.appendChild(subContainerForTotal)
+                  subContainerForTotal.appendChild(totalText)
+            }
+            let masterForItem = document.createElement('div')
+            let bodyOfItem = document.createElement('div')
+            let bodyText = document.createElement('div')
+
+            let itemNumber = document.createElement('h3')
+            let itemAppearances = document.createElement('p')
+            let itemArrays = document.createElement('p')
+            let indexOfOne = document.createElement('p')
+            let indexOfTwo = document.createElement('p')
+
+            itemNumber.textContent = 'Item: ' + map[key].item
+            itemAppearances.textContent = 'Number of Appearances: ' + map[key].appearances
+            itemArrays.textContent = 'Arrays Present: ' + map[key].arrays_present
+            indexOfOne.textContent = 'Index Of Presence in Array One: ' + map[key].indexes.index_of_one
+            indexOfTwo.textContent = 'Index of Presence in Array Two: ' + map[key].indexes.index_of_two
+
+            masterForItem.setAttribute('class', 'card')
+            bodyOfItem.setAttribute('class', 'list-group list-group-flush')
+            itemNumber.setAttribute('class', 'card-header')
+            // itemNumber.setAttribute('class', 'bg-primary')
+            bodyText.setAttribute('class', 'list-group-item')
+            // masterForItem.setAttribute('class', 'bg-info')
+
+            data_here.appendChild(masterForItem)
+            masterForItem.appendChild(bodyOfItem)
+            bodyOfItem.appendChild(itemNumber)
+            bodyOfItem.appendChild(bodyText)
+            bodyText.appendChild(indexOfTwo)
+            bodyText.appendChild(indexOfOne)
+            bodyText.appendChild(itemArrays)
+            bodyText.appendChild(itemAppearances)
+      })
 }
 
 const generateNewData = async () => {
