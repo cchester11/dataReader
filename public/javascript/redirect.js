@@ -1,6 +1,6 @@
 const controller = new AbortController()
 const signal = controller.signal
 
-const generateDataBtn = async () => {
+const redirect = async () => {
       document.location.replace('/index')
 }
