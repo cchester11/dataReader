@@ -1,6 +1,6 @@
 # DataReader
 
-<img src="./images/demo.jpeg" width="160">
+<img src="./images/demo.jpeg">
 
 - npm install
 - npm start
