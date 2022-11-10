@@ -24,7 +24,6 @@ async function onReload() {
 
       data.json()
       .then(data => {
-            // data points will not populate for some reason
             Object.keys(data).forEach((key) => {
                   if (key === 'total') {
                         let masterForTotal = document.createElement('div')

@@ -1,3 +1,5 @@
+const writeToFile = require('./writeToFile.js')
+
 const mapPattern = () => {
       const arrayOne = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
       const arrayTwo = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
@@ -74,6 +76,8 @@ const mapPattern = () => {
       // }
 
       map[total] = totalKeys
+
+      writeToFile(map)
 
       return map
 }
