@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const writeToFile = function (data) {
-      fs.writeFile('./data/index.json', data, err => {
+      fs.writeFile('./data/index.json', JSON.stringify(data), err => {
             if (err) {
                   throw new Error(err)
             }
