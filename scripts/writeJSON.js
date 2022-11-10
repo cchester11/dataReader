@@ -1,4 +1,6 @@
 const mapPattern = () => {
+      const fs = require('fs')
+      
       const arrayOne = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
       const arrayTwo = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
 

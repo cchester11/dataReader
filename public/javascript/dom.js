@@ -12,7 +12,7 @@ function saveMap(data) {
 
 async function onReload() {
       // map does successfully get parsed
-      const map = JSON.parse(localStorage.getItem('localMap'))
+      // const map = JSON.parse(localStorage.getItem('localMap'))
 
       data_total.replaceChildren();
       data_here.replaceChildren();
