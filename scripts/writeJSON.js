@@ -1,5 +1,3 @@
-const writeToFile = require('./writeToFile.js')
-
 const mapPattern = () => {
       const arrayOne = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
       const arrayTwo = Array.from({ length: 50 }, () => Math.floor(Math.random() * 100))
@@ -77,7 +75,12 @@ const mapPattern = () => {
 
       map[total] = totalKeys
 
-      writeToFile(map)
+      fs.writeFile('./data/index.json', JSON.stringify(map), err => {
+            if (err) {
+                  throw new Error(err)
+            }
+            console.log('JSON file written successfully')
+      })
 
       return map
 }
