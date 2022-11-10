@@ -11,8 +11,13 @@ function saveMap (data) {
 }
 
 function onReload() {
+      // map does successfully get parsed
       const map = JSON.parse(localStorage.getItem('localMap'))
 
+      data_total.replaceChildren();
+      data_here.replaceChildren();
+
+      // data points will not populate for some reason
       Object.keys(map).forEach((key) => {
             if (key === 'total') {
                   let masterForTotal = document.createElement('div')
@@ -83,12 +88,14 @@ const generateNewData = async () => {
       })
       .then(data => {
             localMap = {data}
+            // map is successfully saved
             saveMap(localMap)
 
             data_total.replaceChildren();
             data_here.replaceChildren();
 
             console.log('successfully pulled database..populating dom fields')
+
                   Object.keys(data).forEach((key) => {
                         if (key === 'total') {
                               let masterForTotal = document.createElement('div')
