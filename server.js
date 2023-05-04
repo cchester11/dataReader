@@ -26,10 +26,10 @@ watcher.on('change', (path) => { log(`File ${path} has been changed`)})
 //       })
 // })
 
-const server = app.listen(PORT, IP, (err) => {
+app.listen(PORT, IP, (err) => {
       if(err) {
             throw new Error(err)
       } else {
             console.log('Listening on PORT ' + PORT)
       }
-})
+});
