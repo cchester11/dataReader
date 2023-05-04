@@ -8,7 +8,8 @@ const watcher = chokidar.watch('./data/index.json', {
 })
 const log = console.log.bind(console)
 
-const PORT = 3001
+const PORT = process.env.PORT
+const IP = process.env.IP
 
 app.use(require('./routes'))
 app.use(express.static(path.join(__dirname, 'public')))
@@ -25,7 +26,7 @@ watcher.on('change', (path) => { log(`File ${path} has been changed`)})
 //       })
 // })
 
-const server = app.listen(PORT, (err) => {
+const server = app.listen(PORT, IP, (err) => {
       if(err) {
             throw new Error(err)
       } else {
