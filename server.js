@@ -8,7 +8,7 @@ const watcher = chokidar.watch('./data/index.json', {
 })
 const log = console.log.bind(console)
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5001
 const IP = process.env.IP
 
 app.use(require('./routes'))

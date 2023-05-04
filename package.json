@@ -1,8 +1,9 @@
 {
+  "homepage": "datareader-production.up.railway.app",
   "name": "writedata",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
     "writeFile": "node ./scripts/testScript.js",
@@ -10,7 +11,7 @@
     "start": "node server.js",
     "build": ""
   },
-  "author": "",
+  "author": "Charles Chester",
   "license": "ISC",
   "dependencies": {
     "chokidar": "^3.5.3",
