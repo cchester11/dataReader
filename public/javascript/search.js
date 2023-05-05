@@ -10,7 +10,7 @@ const hideResultsBtn = document.getElementById('hideResultsBtn')
 
 searchBtn.addEventListener('click', async () => {
       let text = searchBar.value
-      const data = await fetch('https://datareader-development.up.railway.app/api/data')
+      const data = await fetch('https://datareader-production.up.railway.app/api/data')
 
       data.json()
             .then(res => {
