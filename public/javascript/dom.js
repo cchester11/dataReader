@@ -17,7 +17,7 @@ async function onReload() {
       data_total.replaceChildren();
       data_here.replaceChildren();
 
-      const data = await fetch('https://datareader-production.up.railway.app/api/data', {
+      const data = await fetch('https://datareader-development.up.railway.app/api/data', {
             method: 'get',
             signal: signal
       })
@@ -82,7 +82,7 @@ async function onReload() {
 }
 
 const generateNewData = async () => {
-      await fetch('https://datareader-production.up.railway.app/api/generate', {
+      await fetch('https://datareader-development.up.railway.app/api/generate', {
             method: 'get',
             signal: signal
       })
