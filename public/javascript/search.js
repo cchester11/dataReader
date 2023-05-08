@@ -10,7 +10,15 @@ const hideResultsBtn = document.getElementById('hideResultsBtn')
 
 searchBtn.addEventListener('click', async () => {
       let text = searchBar.value
-      const data = await fetch('https://datareader-development.up.railway.app/api/data')
+      let data;
+      // if(process.env.NODE_ENV === 'development') {
+      //       data = await fetch('https://datareader-development.up.railway.app/api/data')
+      // } else if(process.env.NODE_ENV === 'local') {
+      //       data = await fetch('http://localhost:3001/api/data')
+      // }
+      data = await fetch('/api/data', {
+            method: 'get'
+      })
 
       data.json()
             .then(res => {
